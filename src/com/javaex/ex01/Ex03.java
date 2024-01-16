@@ -12,9 +12,11 @@ public class Ex03 {
 
 	public static void main(String[] args) throws IOException {
 
+		//in
 		InputStream in = new FileInputStream("C:\\javaStudy\\img.jpg");
 		BufferedInputStream bin = new BufferedInputStream(in);
 
+		//out
 		OutputStream out = new FileOutputStream("C:\\javaStudy\\buffedImg.jpg");
 		BufferedOutputStream bout = new BufferedOutputStream(out);
 		
@@ -27,11 +29,11 @@ public class Ex03 {
 				break;
 			}
 			
-			bout.close();
 			bout.write(data);
 		}
 		
 		
+		bout.close();
 		bin.close();
 		
 	}
