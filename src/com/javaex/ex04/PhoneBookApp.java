@@ -60,6 +60,8 @@ public class PhoneBookApp {
 			bw.newLine();
 			bw.write("회사: " + pList.get(i).getCompany());
 			bw.newLine();
+			bw.write(" ");
+			bw.newLine();
 		}
 		
 		for(int i=0; i<pList.size(); i++) {
